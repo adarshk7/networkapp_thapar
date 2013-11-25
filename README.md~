@@ -31,5 +31,3 @@ Notes:
 - Use nc to set up server.
 - Enter "nc -k -l 14000" in the terminal window.
 - Use the text box to enter IP of server run by nc and press connect.
-- User the text box and hit send to send text to server.
-- Write and press enter on the nc server to send back text to client(Android Phone).
