@@ -30,7 +30,6 @@
         android:id="@+id/msgEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/sendButton"
         android:layout_alignLeft="@+id/msgTextView"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/msgTextView"
@@ -38,24 +37,20 @@
         android:hint="@string/hello_world"
         android:inputType="textMultiLine" />
 
-    <Button
-        android:id="@+id/sendButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/msgEditText"
-        android:layout_centerVertical="true"
-        android:text="@string/send_button" />
-
-    <LinearLayout
-        android:id="@+id/receiveMsgLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/msgEditText"
-        android:layout_alignRight="@+id/sendButton"
-        android:layout_below="@+id/sendButton"
-        android:orientation="vertical" >
-
-    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scroll" 
+      	android:layout_width="fill_parent"
+      	android:layout_height="wrap_content"
+      	android:layout_alignLeft="@id/ipTextView"
+        android:layout_below="@+id/sendButton">
+        
+    	<LinearLayout
+        	android:id="@+id/receiveMsgLayout"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical" >
+    	</LinearLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/connectButton"
@@ -74,4 +69,14 @@
         android:text="@string/msg_textbox"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/msgEditText"
+        android:layout_below="@+id/msgEditText"
+        android:text="@string/send_button" />
+
 </RelativeLayout>
+	
+    

@@ -9,5 +9,6 @@
     <string name="ip_hinttext">eg. 192.168.x.x</string>
     <string name="send_button">Send</string>
     <string name="connect_textbox">Connect</string>
+    <string name="default_conn_status">Not Connected</string>
 
 </resources>
